@@ -1,15 +1,3 @@
-God dag, er det noe jeg kan hjelpe deg med?
-God dag, mitt navn er Kim. Jeg jobber her i sko-avdelingen på XXL. Hva kan jeg gjøre for deg?
-Beklager forstyrrelsen (Gå ut av interaksjon)
-
-2
-Anbefal sko på kampanje
-Fortell kunden om pronasjon, passform, demping og fall.
-Hvilket type terreng trenger du sko til?
-Kunne du ha fortalt meg litt mer om hvor du tenker å løpe, og om det er noen spesielle behov skoene trenger å oppfylle?
-
-3
-Hvor tror du at du kommer til å løpe mest? Vet du hvilken skostørrelse du trenger og har du noen kjennskap til pronasjon?
-Anbefal sko
-Er det en sko du kunne tenke deg?
-Hvilken prisklasse passer for deg?
+﻿God dag, er det noe jeg kan hjelpe deg med?;shoe_conv_2
+God dag, mitt navn er Kim. Jeg jobber her i sko-avdelingen på XXL. Hva kan jeg gjøre for deg?;shoe_conv_1
+Beklager forstyrrelsen (Gå ut av interaksjon);shoe_conv_2
