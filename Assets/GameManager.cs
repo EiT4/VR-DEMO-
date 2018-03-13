@@ -7,6 +7,9 @@ using UnityEngine.Video;
 public class GameManager : MonoBehaviour {
 
     public Text message;
+	public Text scoreText;
+
+	private int totalScore = 0;
 
     private static GameManager _instance;
     public static GameManager Instance { get { return _instance; } }
@@ -33,7 +36,7 @@ public class GameManager : MonoBehaviour {
 
     IEnumerator CheckIfVideoIsDone() {
         while(true) {
-            if(currentPlayer != null && !currentPlayer.isPlaying) {// && currentPlayer.frame > 1)
+			if(currentPlayer != null && !currentPlayer.isPlaying && currentPlayer.frame > 1) {
                 currentPlayer.transform.GetChild(0).gameObject.SetActive(true);
             } else
             {
@@ -75,21 +78,49 @@ public class GameManager : MonoBehaviour {
 		
 	}
 
-    public void Debug(string text)
+    public void DebugWrite(string text)
     {
         UnityEngine.Debug.Log(text);
         message.text = text;
     }
 
-    [SerializeField] public Transform something;
-    public void CONFIRM()
+    [SerializeField] public Transform shoesListContainer;
+    public void ConfirmChoice()
     {
-        foreach(Transform t in something)
+
+		int correctChoices = 0;
+		int wrongChoices = 0;
+
+		int totalChoices = shoesListContainer.childCount;
+
+		foreach(Transform t in shoesListContainer)
         {
+			ItemContainer item = t.GetComponent<ItemContainer> ();
+
             if (t.GetComponentInChildren<Toggle>().isOn) {
-                UnityEngine.Debug.Log("yoloswag!");
+				if (item.IsCorrect)
+					correctChoices += 1;
+				else
+					wrongChoices += 1;
             }
         }
+
+		int score = Mathf.Max((10 * correctChoices) - (20 * wrongChoices), 0);
+			
+		Debug.Log ("Poengsum: " + score + "(Korrekte: " + correctChoices + ", feil: " + wrongChoices + ")");
     }
 
+	public void AddScore(int score) {
+		totalScore += score;
+		scoreText.text = "+" + score.ToString () + " poeng";
+		StartCoroutine (ShowScoreDisplay());
+	}
+
+	IEnumerator ShowScoreDisplay() {
+		scoreText.gameObject.SetActive (true);
+
+		yield return new WaitForSeconds (2);
+
+		scoreText.gameObject.SetActive (false);
+	}
 }

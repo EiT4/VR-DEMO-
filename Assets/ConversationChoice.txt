@@ -1,3 +1,0 @@
-﻿God dag, er det noe jeg kan hjelpe deg med?;shoe_conv_2
-God dag, mitt navn er Kim. Jeg jobber her i sko-avdelingen på XXL. Hva kan jeg gjøre for deg?;shoe_conv_1
-Beklager forstyrrelsen (Gå ut av interaksjon);shoe_conv_2

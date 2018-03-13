@@ -1,0 +1,7 @@
+// Ettersom jeg ikke har løpt noe særlig før, vet jeg ikke helt hvor jeg
+// kommer til å løpe. Blir nok fort litt i byen og Bymarka. Og på mølla på treningssenteret når det er dårlig vær.
+
+Hvor tror du at du kommer til å løpe mest? Vet du hvilken skostørrelse du trenger og har du noen kjennskap til pronasjon?;shoe_conv_5;10
+Anbefal sko;1;3
+Er det en sko du kunne tenke deg?;shoe_conv_6;4
+Hvilken prisklasse passer for deg?;shoe_conv_7;0

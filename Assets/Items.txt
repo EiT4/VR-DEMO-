@@ -1,6 +1,0 @@
-Altra;Altra@Dette er en bra sko;0;1
-Gel;Gel@Dette er en bra sko;0;1
-Kinvara;Kinvara 17@Dette er en bra sko;1;1
-Ultraboost;Nike Ultraboost 42@Dette er en bra sko;0;1
-Ultrafly;Asics Ultrafly 2@Dette er en bra sko;0;1
-Vaporfly;Adidas Adios Adizero 3@Dette er en veldig bra sko;0;1

@@ -1,0 +1,7 @@
+shoe_conv_1: Gjest står og ser på hylle med sko. Ser usikker ut.
+shoe_conv_2: Hei, jeg tenker å starte å løpe, og trenger hjelp til å velge riktige sko. Har du noen anbefalinger?
+shoe_conv_3: Ettersom jeg ikke har løpt noe særlig før, vet jeg ikke helt hvor jeg kommer til å løpe. Blir nok fort litt i byen og Bymarka. Og på mølla på treningssenteret når det er dårlig vær.
+shoe_conv_4: Skal løpe på mølle og i Bymarka. (Gjesten ser usikker ut. Tilfeldig element som gjør at kunden går?)
+shoe_conv_5: Jeg tror jeg kommer til å løpe mest i byen, for jeg har ikke kjøpt treningsmedlemskap enda. I skostørrelse har jeg vanligvis 41, og har blitt fortalt at jeg har overpronasjon.
+shoe_conv_6: Gjerne noen rosa, men så lenge jeg kan bruke de i byen er jeg fornøyd.
+shoe_conv_7: Gjerne billigere enn 500 kroner.

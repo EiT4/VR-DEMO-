@@ -1,0 +1,6 @@
+﻿//Hendelse: Gjest står og ser på hylle med sko. Ser usikker ut.
+//Ansatt: Peker på gjester for å aktivere interaksjon.
+
+God dag, er det noe jeg kan hjelpe deg med?;shoe_conv_2;5
+God dag, mitt navn er Kim. Jeg jobber her i sko-avdelingen på XXL. Hva kan jeg gjøre for deg?;shoe_conv_2;3
+Beklager forstyrrelsen (Gå ut av interaksjon);0;0

@@ -1,4 +1,0 @@
-Hvor tror du at du kommer til å løpe mest? Vet du hvilken skostørrelse du trenger og har du noen kjennskap til pronasjon?;shoe_conv_1
-Anbefal sko;shoe_conv_1
-Er det en sko du kunne tenke deg?;shoe_conv_1
-Hvilken prisklasse passer for deg?;shoe_conv_1

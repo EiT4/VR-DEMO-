@@ -1,4 +1,0 @@
-Anbefal sko på kampanje;shoe_conv_1
-Fortell kunden om pronasjon, passform, demping og fall.;shoe_conv_3
-Hvilket type terreng trenger du sko til?;0
-Kunne du ha fortalt meg litt mer om hvor du tenker å løpe, og om det er noen spesielle behov skoene trenger å oppfylle?;shoe_conv_3

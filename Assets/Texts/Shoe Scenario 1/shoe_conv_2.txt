@@ -1,0 +1,6 @@
+//Gjest: Hei, jeg tenker å starte å løpe, og trenger hjelp til å velge riktige sko. Har du noen anbefalinger?
+
+Anbefal sko på kampanje;1;0
+Fortell kunden om pronasjon, passform, demping og fall.;shoe_conv_4;2
+Hvilket type terreng trenger du sko til?;shoe_conv_3;7
+Kunne du ha fortalt meg litt mer om hvor du tenker Â løpe, og om det er noen spesielle behov skoene trenger Â oppfylle?;shoe_conv_3;10

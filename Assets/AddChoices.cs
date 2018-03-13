@@ -8,39 +8,48 @@ public class AddChoices : MonoBehaviour {
 	public TextAsset textFile;
 	public GameObject buttonPrefab;
 
-	// Use this for initialization
+	public GameObject[] choiceObjects;
+
 	void Start () {
-        Debug.Log(textFile.text);
 		string[] lines = textFile.text.Split (new string[] { "\n" }, System.StringSplitOptions.None);
 
-		foreach (string line in lines) {
+		choiceObjects = new GameObject[lines.Length];
+		for(int i = 0; i < lines.Length; i++) {
+			string line = lines [i];
+
+			// If line starts with //, it means this is what the customer says in the video belonging to these answers
+			if (line.StartsWith ("//") || string.IsNullOrEmpty(line)) continue;
+
             string[] components = line.Split(new string[] { ";" }, System.StringSplitOptions.None);
             string conversation = components[0];
             string id = components[1];
+			int score = int.Parse(components [2]);
             
 			GameObject button = Instantiate (buttonPrefab);
+			choiceObjects [i] = button;
 
 			button.transform.SetParent (transform, false);
 			button.GetComponentInChildren<Text> ().text = conversation;
 			button.GetComponentInChildren<Text> ().fontSize = 80;
-            button.GetComponent<Button>().onClick.AddListener(delegate { this.ClickChoice(id); });
+            button.GetComponent<Button>().onClick.AddListener(delegate { this.ClickChoice(id, score); });
 		}
 
         gameObject.SetActive(false);
 	}
 
-    public void ClickChoice(string choiceId) {
-        if(choiceId.Equals("0"))
-        {
-            return;
-        }
+	public void ClickChoice(string choiceId, int points) {
+		// Add score
+		GameManager.Instance.AddScore(points);
 
-        GameManager.Instance.Debug("Du valgte: " + choiceId);
+		if (choiceId.Equals ("0")) {
+			// End conversation in some way
+			return;
+		} else if (choiceId.Equals ("1")) {
+			// Pause video, make person choose shoes.
+			return;
+		}
+
+        GameManager.Instance.DebugWrite("Du valgte: " + choiceId);
         GameManager.Instance.SetActiveVideo(choiceId);
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
